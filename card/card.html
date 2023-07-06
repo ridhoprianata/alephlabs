@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="contentBx">
+              <h3>Little Known Facts</h3>
+            </div>
+          </div>
+          <div class="sci">
+            <p>
+              All the Lorem Ipsum generators on the Internet tend to repeat
+              predefined chunks as necessary
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #161616;
+      min-height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 40px 0;
+      cursor: pointer;
+    }
+
+    .container .card {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      background-image: url("gedung.jpg");
+      margin: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background-size: cover;
+    }
+
+    .container .card .content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .container .card:hover .content {
+      transform: translateY(-80px);
+    }
+
+    .container .card .content .imgBx {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    .container .card .content .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container .card .content .contentBx h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 100%;
+      line-height: 1.1em;
+    }
+
+    .container .card .content .contentBx h3 span {
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: initial;
+    }
+
+    .container .card .sci {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+    }
+
+    .container .card .sci {
+      list-style: none;
+      margin: 0 10px;
+      transform: translateY(40px);
+      transition: 0.5s;
+      opacity: 0;
+    }
+
+    .container .card:hover .sci {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    .container .card .sci p {
+      color: #fff;
+      font-size: 17px;
+      text-align: center;
+    }
+  </style>
+</html>
